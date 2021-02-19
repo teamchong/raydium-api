@@ -1,0 +1,14 @@
+# production
+requests
+requests[socks]
+requests-toolbelt
+fastapi
+uvicorn
+werkzeug
+
+# development
+pip-tools
+flake8
+black
+isort
+ipdb

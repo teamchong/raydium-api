@@ -1,0 +1,13 @@
+{
+    "apps": [{
+        "name": "http-server",
+        "interpreter": "./venv/bin/python",
+        "cwd": "./",
+        "script": "uvicorn",
+        "args": "app.app:app --host 0.0.0.0 --port 80",
+        "log_file": "./logs/http-server.log",
+        "out_file": "./logs/http-server-out.log",
+        "error_file": "./logs/http-server-error.log",
+        "merge_logs": true
+    }]
+}
