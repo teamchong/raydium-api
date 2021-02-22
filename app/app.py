@@ -56,7 +56,7 @@ def get_ray_balance(address):
 
 @app.get("/ray/totalcoins", response_class=PlainTextResponse)
 def totalcoins():
-    return str(get_ray_supply())
+    return str(get_ray_supply() / 1e6)
 
 
 @app.get("/ray/circulating", response_class=PlainTextResponse)
